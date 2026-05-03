@@ -2,6 +2,12 @@
 
 An intelligent Streamlit dashboard that transforms raw CSV/Excel/Parquet/JSON files into actionable insights, visualizations, forecasts, and AI-powered recommendations via Google Gemini.
 
+<img width="1918" height="876" alt="Screenshot 2026-05-03 234423" src="https://github.com/user-attachments/assets/ee268932-86a1-48ff-8c1c-2de139b29fbd" />
+<img width="1919" height="884" alt="Screenshot 2026-05-03 234733" src="https://github.com/user-attachments/assets/6a725b48-4447-40f4-a1bb-8eef579a6a68" />
+<img width="1919" height="872" alt="Screenshot 2026-05-03 234816" src="https://github.com/user-attachments/assets/40763a8c-103b-4535-a7b6-01375e559680" />
+<img width="1918" height="879" alt="Screenshot 2026-05-03 234933" src="https://github.com/user-attachments/assets/5b20f3fb-af99-41e8-af7b-1f1f0a7f0021" />
+<img width="1919" height="881" alt="Screenshot 2026-05-03 235009" src="https://github.com/user-attachments/assets/581ad907-fbf9-46d9-9317-c9e69f9fdbb9" />
+
 ## ✨ Features
 
 | Page | What It Does |
