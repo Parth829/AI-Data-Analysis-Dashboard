@@ -53,7 +53,7 @@ def render_insights(df, schema):
         disabled=not key_available,
         help=None if key_available else "AI insights unavailable — configure GOOGLE_API_KEY in your environment.",
     ):
-        with st.spinner("Analyzing with Gemini..."):
+        with st.spinner("Analyzing..."):
             results = generate_gemini_insights(df, schema, domain, goal)
 
         if results:
