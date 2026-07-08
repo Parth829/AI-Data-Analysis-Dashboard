@@ -1,4 +1,4 @@
-# 📊 AI-Powered Data Analysis Dashboard
+#  AI-Powered Data Analysis Dashboard
 
 An intelligent Streamlit dashboard that transforms raw CSV/Excel/Parquet/JSON files into actionable insights, visualizations, forecasts, and AI-powered recommendations via Google Gemini.
 
@@ -10,7 +10,7 @@ An intelligent Streamlit dashboard that transforms raw CSV/Excel/Parquet/JSON fi
 <img width="1918" height="879" alt="Screenshot 2026-05-03 234933" src="https://github.com/user-attachments/assets/5b20f3fb-af99-41e8-af7b-1f1f0a7f0021" />
 <img width="1919" height="881" alt="Screenshot 2026-05-03 235009" src="https://github.com/user-attachments/assets/581ad907-fbf9-46d9-9317-c9e69f9fdbb9" />
 
-## ✨ Features
+##  Features
 
 | Page | What It Does |
 |------|-------------|
@@ -24,7 +24,7 @@ An intelligent Streamlit dashboard that transforms raw CSV/Excel/Parquet/JSON fi
 | **Regression** | Random Forest with R², MAE, MAPE, RMSE, residuals, 5-fold CV, categorical support |
 | **Export** | Excel (5 sheets), PDF (fpdf2 + optional chart images), HTML (interactive) |
 
-## 🚀 Quickstart
+##  Quickstart
 
 ```bash
 # 1. Clone and enter the project
@@ -68,7 +68,7 @@ pip install prophet==1.1.6
 pip install kaleido==0.2.1
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── app.py                      # Entry point — sidebar, routing
@@ -114,7 +114,7 @@ pip install kaleido==0.2.1
 └── .env.example
 ```
 
-## 🔑 Key Design Decisions
+##  Key Design Decisions
 
 ### Display Layer vs Modeling Layer
 The **#1 fix** in this restructure. The old code applied `LabelEncoder` + `StandardScaler` to all data before display — turning "North" into `0` and `$1,200` into `-0.34` everywhere. Now:
@@ -141,7 +141,7 @@ Columns are assigned semantic roles (DATE, MONETARY, IDENTIFIER, etc.) using a s
 | `models/anomaly_detection.py` | `analytics/anomaly.py` | Added rolling window, context rows, CSV export |
 | `models/predictive_analytics.py` | `analytics/forecasting.py` + `ml/regression.py` | Added naive baseline, holdout, R²/MAE/MAPE, CV |
 
-## 🔌 How to Extend
+##  How to Extend
 
 ### Adding a New Insight Rule
 1. Open `analytics/insights_engine.py`
@@ -158,7 +158,7 @@ Columns are assigned semantic roles (DATE, MONETARY, IDENTIFIER, etc.) using a s
 2. Modify `generate_gemini_insights()` to use your preferred LLM client
 3. Keep the same return format: `list[dict]` with `{insight, evidence, confidence, recommendation}`
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.10+
 - See `requirements.txt` for pinned versions
